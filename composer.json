@@ -1,0 +1,6 @@
+{
+    "require": {
+        "infusionsoft/php-sdk": "^1.3",
+        "twilio/sdk": "^5.13"
+    }
+}

@@ -1,0 +1,597 @@
+[
+    {
+        "name": "psr/log",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2016-10-10 12:19:37",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Log\\": "Psr/Log/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for logging libraries",
+        "homepage": "https://github.com/php-fig/log",
+        "keywords": [
+            "log",
+            "psr",
+            "psr-3"
+        ]
+    },
+    {
+        "name": "psr/http-message",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/http-message.git",
+            "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+            "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2016-08-06 14:39:51",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Http\\Message\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for HTTP messages",
+        "homepage": "https://github.com/php-fig/http-message",
+        "keywords": [
+            "http",
+            "http-message",
+            "psr",
+            "psr-7",
+            "request",
+            "response"
+        ]
+    },
+    {
+        "name": "zendframework/zend-diactoros",
+        "version": "1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zend-diactoros.git",
+            "reference": "b03f285a333f51e58c95cce54109a4a9ed691436"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/b03f285a333f51e58c95cce54109a4a9ed691436",
+            "reference": "b03f285a333f51e58c95cce54109a4a9ed691436",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.4 || ^7.0",
+            "psr/http-message": "~1.0"
+        },
+        "provide": {
+            "psr/http-message-implementation": "1.0"
+        },
+        "require-dev": {
+            "ext-dom": "*",
+            "ext-libxml": "*",
+            "phpunit/phpunit": "^4.6 || ^5.5",
+            "zendframework/zend-coding-standard": "~1.0.0"
+        },
+        "time": "2017-04-06 16:18:34",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.4-dev",
+                "dev-develop": "1.5-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Zend\\Diactoros\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-2-Clause"
+        ],
+        "description": "PSR HTTP Message implementations",
+        "homepage": "https://github.com/zendframework/zend-diactoros",
+        "keywords": [
+            "http",
+            "psr",
+            "psr-7"
+        ]
+    },
+    {
+        "name": "egeloen/http-adapter",
+        "version": "0.8.0",
+        "version_normalized": "0.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/egeloen/ivory-http-adapter.git",
+            "reference": "9641f11487ec26b24c6bbcee4f267cf62f60b855"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/egeloen/ivory-http-adapter/zipball/9641f11487ec26b24c6bbcee4f267cf62f60b855",
+            "reference": "9641f11487ec26b24c6bbcee4f267cf62f60b855",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.8",
+            "zendframework/zend-diactoros": "^1.1"
+        },
+        "require-dev": {
+            "cakephp/cakephp": "^3.0.3",
+            "ext-curl": "*",
+            "guzzle/guzzle": "^3.9.4@dev",
+            "guzzlehttp/guzzle": "^4.1.4|^5.0|^6.0",
+            "kriswallsmith/buzz": "^0.13",
+            "nategood/httpful": "^0.2.17",
+            "phpunit/phpunit": "^4.0",
+            "phpunit/phpunit-mock-objects": "dev-matcher-verify as 2.3.x-dev",
+            "psr/log": "^1.0",
+            "react/dns": "^0.4.1",
+            "react/http-client": "^0.4",
+            "satooshi/php-coveralls": "^0.6",
+            "symfony/event-dispatcher": "^2.0",
+            "zendframework/zend-http": "^2.3.4",
+            "zendframework/zendframework1": ">=1.12.9,<=1.12.14|^1.12.16"
+        },
+        "suggest": {
+            "ext-curl": "Allows you to use the cURL adapter",
+            "ext-http": "Allows you to use the PECL adapter",
+            "guzzle/guzzle": "Allows you to use the Guzzle 3 adapter",
+            "guzzlehttp/guzzle": "Allows you to use the Guzzle 4 adapter",
+            "kriswallsmith/buzz": "Allows you to use the Buzz adapter",
+            "nategood/httpful": "Allows you to use the httpful adapter",
+            "psr/log": "Allows you to use the logger event subscriber",
+            "symfony/event-dispatcher": "Allows you to use the event lifecycle",
+            "symfony/stopwatch": "Allows you to use the stopwatch http adapter and event subscriber",
+            "zendframework/zend-http": "Allows you to use the Zend 2 adapter",
+            "zendframework/zendframework1": "Allows you to use the Zend 1 adapter"
+        },
+        "time": "2015-08-12 09:35:40",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.8-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Ivory\\HttpAdapter\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Eric GELOEN",
+                "email": "geloen.eric@gmail.com"
+            }
+        ],
+        "description": "Issue HTTP request for PHP 5.3+.",
+        "keywords": [
+            "http",
+            "http-adapter",
+            "http-client",
+            "psr-7"
+        ],
+        "abandoned": "php-http/httplug"
+    },
+    {
+        "name": "lstrojny/fxmlrpc",
+        "version": "0.11.0",
+        "version_normalized": "0.11.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/lstrojny/fxmlrpc.git",
+            "reference": "3a18a43922282a699b2ad89654a0ab122f581a6b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/lstrojny/fxmlrpc/zipball/3a18a43922282a699b2ad89654a0ab122f581a6b",
+            "reference": "3a18a43922282a699b2ad89654a0ab122f581a6b",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4"
+        },
+        "require-dev": {
+            "egeloen/http-adapter": "~0.6",
+            "internations/kodierungsregelwerksammlung": "dev-master",
+            "lstrojny/hmmmath": "*",
+            "monolog/monolog": ">=1.1",
+            "phpunit/phpunit": "~4",
+            "psr/log": "*",
+            "symfony/process": "~2.1",
+            "zendframework/zend-log": "~2",
+            "zendframework/zendframework1": "~1.12.4"
+        },
+        "suggest": {
+            "guzzle/guzzle": "To integrate Guzzle as HTTP client",
+            "monolog/monolog": "To integrate monolog as logger",
+            "zendframework/zend-log": "To use ZF2 Zend\\Log\\Logger as a logger",
+            "zendframework/zendframework1": "To use ZF1 Log"
+        },
+        "time": "2016-05-19 08:40:23",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "fXmlRpc\\": "src/fXmlRpc"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Lars Strojny",
+                "email": "lstrojny@php.net",
+                "homepage": "http://usrportage.de"
+            }
+        ],
+        "description": "Fast and tiny XML/RPC client with bridges for various HTTP clients",
+        "keywords": [
+            "api",
+            "performance",
+            "rpc",
+            "xml",
+            "xmlrpc"
+        ]
+    },
+    {
+        "name": "guzzlehttp/promises",
+        "version": "v1.3.1",
+        "version_normalized": "1.3.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/promises.git",
+            "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+            "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.0"
+        },
+        "time": "2016-12-20 10:07:11",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "GuzzleHttp\\Promise\\": "src/"
+            },
+            "files": [
+                "src/functions_include.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            }
+        ],
+        "description": "Guzzle promises library",
+        "keywords": [
+            "promise"
+        ]
+    },
+    {
+        "name": "guzzlehttp/psr7",
+        "version": "1.4.2",
+        "version_normalized": "1.4.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/psr7.git",
+            "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+            "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0",
+            "psr/http-message": "~1.0"
+        },
+        "provide": {
+            "psr/http-message-implementation": "1.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0"
+        },
+        "time": "2017-03-20 17:10:46",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "GuzzleHttp\\Psr7\\": "src/"
+            },
+            "files": [
+                "src/functions_include.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            },
+            {
+                "name": "Tobias Schultze",
+                "homepage": "https://github.com/Tobion"
+            }
+        ],
+        "description": "PSR-7 message implementation that also provides common utility methods",
+        "keywords": [
+            "http",
+            "message",
+            "request",
+            "response",
+            "stream",
+            "uri",
+            "url"
+        ]
+    },
+    {
+        "name": "guzzlehttp/guzzle",
+        "version": "6.3.0",
+        "version_normalized": "6.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/guzzle.git",
+            "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f4db5a78a5ea468d4831de7f0bf9d9415e348699",
+            "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699",
+            "shasum": ""
+        },
+        "require": {
+            "guzzlehttp/promises": "^1.0",
+            "guzzlehttp/psr7": "^1.4",
+            "php": ">=5.5"
+        },
+        "require-dev": {
+            "ext-curl": "*",
+            "phpunit/phpunit": "^4.0 || ^5.0",
+            "psr/log": "^1.0"
+        },
+        "suggest": {
+            "psr/log": "Required for using the Log middleware"
+        },
+        "time": "2017-06-22 18:50:49",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "6.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/functions_include.php"
+            ],
+            "psr-4": {
+                "GuzzleHttp\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            }
+        ],
+        "description": "Guzzle is a PHP HTTP client library",
+        "homepage": "http://guzzlephp.org/",
+        "keywords": [
+            "client",
+            "curl",
+            "framework",
+            "http",
+            "http client",
+            "rest",
+            "web service"
+        ]
+    },
+    {
+        "name": "infusionsoft/php-sdk",
+        "version": "1.3.0",
+        "version_normalized": "1.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/infusionsoft/infusionsoft-php.git",
+            "reference": "5d8429329c3fdd0fb569fc3d471002416a7cc0ac"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/infusionsoft/infusionsoft-php/zipball/5d8429329c3fdd0fb569fc3d471002416a7cc0ac",
+            "reference": "5d8429329c3fdd0fb569fc3d471002416a7cc0ac",
+            "shasum": ""
+        },
+        "require": {
+            "egeloen/http-adapter": "~0.6",
+            "ext-curl": "*",
+            "guzzlehttp/guzzle": "~6.1",
+            "lstrojny/fxmlrpc": "0.11",
+            "php": ">=5.5",
+            "psr/log": "~1.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "^0.9",
+            "phpunit/phpunit": "~4",
+            "squizlabs/php_codesniffer": "1.*"
+        },
+        "time": "2017-07-26 14:49:01",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Infusionsoft": [
+                    "src",
+                    "tests"
+                ]
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Infusionsoft",
+                "homepage": "https://developer.infusionsoft.com"
+            }
+        ],
+        "description": "PHP SDK for the Infusionsoft",
+        "homepage": "https://developer.infusionsoft.com",
+        "keywords": [
+            "infusionsoft",
+            "sdk"
+        ]
+    },
+    {
+        "name": "twilio/sdk",
+        "version": "5.13.1",
+        "version_normalized": "5.13.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/twilio/twilio-php.git",
+            "reference": "f9d388ff24b0767eff91551d8d26fbd2bd1c7387"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/twilio/twilio-php/zipball/f9d388ff24b0767eff91551d8d26fbd2bd1c7387",
+            "reference": "f9d388ff24b0767eff91551d8d26fbd2bd1c7387",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "apigen/apigen": "^4.1",
+            "phpunit/phpunit": "4.5.*"
+        },
+        "time": "2017-08-10 18:43:03",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Twilio\\": "Twilio/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Twilio API Team",
+                "email": "api@twilio.com"
+            }
+        ],
+        "description": "A PHP wrapper for Twilio's API",
+        "homepage": "http://github.com/twilio/twilio-php",
+        "keywords": [
+            "api",
+            "sms",
+            "twilio"
+        ]
+    }
+]

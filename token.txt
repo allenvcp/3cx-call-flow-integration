@@ -1,0 +1,1 @@
+O:18:"Infusionsoft\Token":4:{s:11:"accessToken";s:24:"6mhzbyz79hrs7j38suxkqpaw";s:12:"refreshToken";s:24:"kmsjn4bp6xr35qcd5q5uc7zw";s:9:"endOfLife";i:1504039279;s:9:"extraInfo";a:2:{s:10:"token_type";s:6:"bearer";s:5:"scope";s:27:"full|tz184.infusionsoft.com";}}
