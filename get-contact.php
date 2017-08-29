@@ -1,10 +1,10 @@
 <?php
 
 require_once __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . 'ISToken.php';
+require_once __DIR__ . '/ISToken.php';
 
 
-	function getContact($phoneNum, $infusionsoft)
+	function getContact($phoneNum)
     {
         $table = 'Contact';
         $fieldName = 'Phone1';
@@ -16,9 +16,14 @@ require_once __DIR__ . 'ISToken.php';
             'LastName',
             'Phone1'
         );
-    
+    	
+    	$infusionsoft = getISToken();
         $results = $infusionsoft->data('xml')->findByField($table, 1, 0 ,$fieldName, $phoneNum, $returnFields);
-        return json_encode($results);
+
+        $results = json_encode($results);
+        
+        return $results;	
+        
     }
 
 
