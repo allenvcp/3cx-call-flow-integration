@@ -13,10 +13,15 @@
 		$credentialsPath = __DIR__ . '/token.txt';
 		$credentials = file_get_contents($credentialsPath);
 		
-		//echo 'Got credentials';
-	
-		$infusionsoft->setToken(unserialize($credentials));
+
+		try{
+			$infusionsoft->setToken(unserialize($credentials));
+		}catch(\Infusionsoft\TokenExpiredException $e){
+			$infusionsoft->refreshAccessToken();
+			$infusionsoft->setToken(unserialize($credentials));
+		}
 		
+
 		return $infusionsoft;
 		
 	}
