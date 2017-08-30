@@ -4,7 +4,7 @@
 	require __DIR__ . '/ISToken.php';
 
 
-
+	$phoneNum = $_POST['phone'];
 	$infusionsoft = getISToken();
 
 	
@@ -31,12 +31,15 @@
 		
     	try{
 			//echo 'End of script C';
+			//echo $infusionsoft->isExpired();
+			
     		$results = $infusionsoft->data('xml')->findByField($table, 1, 0 ,$fieldName, $phoneNum, $returnFields);
         	$results = json_encode($results);
-
+			
         	return $results;
     	}catch(\Infusionsoft\TokenExpiredException $e){
-    		$infusionsoft->refreshAccessToken();
+    		setISToken($infusionsoft);
+    		
     		$results = $infusionsoft->data('xml')->findByField($table, 1, 0 ,$fieldName, $phoneNum, $returnFields);
         	$results = json_encode($results);
         			
@@ -51,7 +54,8 @@
 		try{
     		$results = $infusionsoft->contacts('xml')->addToGroup($contactId, $tagId);
     	}catch(\Infusionsoft\TokenExpiredException $e){
-    		$infusionsoft->refreshAccessToken();
+    		setISToken($infusionsoft);
+    		//var_dump($infusionsoft);
     		$results = $infusionsoft->contacts('xml')->addToGroup($contactId, $tagId);
     	}
 
@@ -81,7 +85,7 @@
     	    'Accepted'          => 1
     	));
     	}catch(\Infusionsoft\TokenExpiredException $e){
-    		$infusionsoft->refreshAccessToken();
+    		setISToken($infusionsoft);
     		$infusionsoft->data('xml')->add('ContactAction', array(    	
 	        'ContactId' 	    => $contactId, 
 	        'CreationNotes'     => $body,  		       // Note Description
@@ -104,7 +108,6 @@
 	}
 	
 	//$phoneNum = '(904) 796-0559';
-	$phoneNum = $_POST['phone'];
 
 	$result = json_decode(getContact($infusionsoft,$phoneNum),true);
 		//echo "End of script 2<br>";

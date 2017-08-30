@@ -17,7 +17,7 @@
 		try{
 			$infusionsoft->setToken(unserialize($credentials));
 		}catch(\Infusionsoft\TokenExpiredException $e){
-			$infusionsoft->refreshAccessToken();
+			setISToken($infusionsoft);
 			$infusionsoft->setToken(unserialize($credentials));
 		}
 		
@@ -26,6 +26,16 @@
 		
 	}
 	
+	
+	function setISToken($infusionsoft){
+		
+		$credentialsPath = __DIR__ . '/token.txt';
+
+		$credentials = serialize($infusionsoft->refreshAccessToken());
+	
+    	// Store the credentials to disk.
+    	file_put_contents($credentialsPath, $credentials);
+	}
 	
 	
 ?>
