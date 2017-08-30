@@ -27,13 +27,10 @@
             'Phone1'
         );
     	
-    			echo "End of script A";
 		//var_dump($infusionsoft);
 		
     	try{
-			//Your search is fucked up
-			// -Past Allen
-			echo 'End of script C';
+			//echo 'End of script C';
     		$results = $infusionsoft->data('xml')->findByField($table, 1, 0 ,$fieldName, $phoneNum, $returnFields);
         	$results = json_encode($results);
 
